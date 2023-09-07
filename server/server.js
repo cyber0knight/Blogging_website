@@ -13,14 +13,14 @@ import { fileURLToPath } from "url";
 
 //configure env
 dotenv.config();
-console.log(process.env.DEV_MODE);
+// console.log(process.env.DEV_MODE);
 
 //database config
 connectDB();
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 //rest object
 const app = express();
@@ -28,7 +28,7 @@ const app = express();
 //middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, './client/build')))
+// app.use(express.static(path.join(__dirname, './client/build')))
 
 // routes
 app.use("/api/v1/auth", authRoutes);
@@ -38,12 +38,12 @@ app.use("/api/v1/like",likeRoutes);
 app.use("/api/v1/photo",photoRoutes);
 
 //rest api
-// app.get("/", (req, res) => {
-//   res.send("<h1>Welcome to Blogging Website</h1>");
-// });
-app.use('*',function(req, res){
-  res.sendFile(path.join(__dirname, './client/build/index.html'));
-})
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to Blogging Website</h1>");
+});
+// app.use('*',function(req, res){
+//   res.sendFile(path.join(__dirname, './client/build/index.html'));
+// })
 
 //PORT
 const PORT = process.env.port || 8080;
