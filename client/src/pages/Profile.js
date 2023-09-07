@@ -61,7 +61,7 @@ const Profile = () => {
           <label htmlFor="photoInput" style={{ cursor: "pointer" }}>
             {userPhoto ? (
               <img
-                src={`/api/v1/photo/getPhoto/${auth.user._id}`}
+                src={`https://blogging-website-server.onrender.com/api/v1/photo/getPhoto/${auth.user._id}`}
                 className="card-img-top"
                 alt="user"
               />
