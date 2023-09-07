@@ -23,7 +23,7 @@ const CreateBlog = () => {
             postData.append("photo",photo);
             postData.append("content",content);
             const { data } = axios.post(
-                "/api/v1/post/create-post",
+                "https://blogging-website-server.onrender.com/api/v1/post/create-post",
                 postData
               );
             if(data?.success){
