@@ -28,7 +28,7 @@ const UserBlogs = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this post?');
 
     if (confirmDelete) {
-      axios.delete(`api/v1/post/deletePost/${postId}`);
+      axios.delete(`https://blogging-website-server.onrender.com/api/v1/post/deletePost/${postId}`);
       window.location.reload();
       successNote("Deleted successfully");
     }
