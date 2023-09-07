@@ -41,7 +41,7 @@ const Blogs = () => {
                 y="0"
                 width="100%"
                 height="100%"
-                xlinkHref={`/api/v1/post/post-photo/${post._id}`}
+                xlinkHref={`https://blogging-website-server.onrender.com/api/v1/post/post-photo/${post._id}`}
                 alt={post.category}
               />
               <text x="40%" y="50%" fill="#eceeef">
