@@ -18,7 +18,7 @@ const Profile = () => {
     try {
       const userId = auth.user._id;
   
-      const { data } = await axios.post(`/api/v1/photo/createPhoto/${userId}`, photoData);
+      const { data } = await axios.post(`https://blogging-website-server.onrender.com//api/v1/photo/createPhoto/${userId}`, photoData);
   
       if (data?.success) {
         successNote(data?.message);
