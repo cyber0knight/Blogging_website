@@ -36,7 +36,7 @@ const Signify = (props) => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("/api/v1/auth/register", {
+            const res = await axios.post("https://blogging-website-server.onrender.com/api/v1/auth/register", {
                 userName,
                 email,
                 password,
@@ -63,7 +63,7 @@ const Signify = (props) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("/api/v1/auth/login", {
+            const res = await axios.post("https://blogging-website-server.onrender.com/api/v1/auth/login", {
                 email: lEmail, // Use lEmail for email field
                 password: lPassword, // Use lPassword for password field
             });
