@@ -13,7 +13,7 @@ const PhotoProvider = ({ children }) => {
     if (auth.user) {
       // Assuming you have an API endpoint to get the user's photo
       // You can replace 'your-photo-api-endpoint' with the actual API endpoint
-      axios.get(`/api/v1/photo/getPhoto/${auth.user._id}`)
+      axios.get(`https://blogging-website-server.onrender.com/api/v1/photo/getPhoto/${auth.user._id}`)
         .then((response) => {
           // Check if the response contains a photo
           if (response) {
