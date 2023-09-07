@@ -1,0 +1,51 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(175, 180, 181);
+    font-family: "Libre Baskerville", serif;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Add horizontal padding for spacing */
+    z-index: 1;
+  }
+  
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contain .h2 {
+    font-size: 1.4em;
+    color: #000;
+    text-decoration: none;
+    margin: 0; /* Remove position and transform properties */
+  }
+  
+  .contain .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contain .links .link {
+    text-decoration: none;
+    font-size: 1em;
+    color: #000;
+    margin: 0 10px; /* Add margin for spacing between links */
+  }
+  
+  .contain .links .link:hover {
+    color: #fff;
+  }
+
+  @media (min-width: 0px) and (max-width:480px)
+  {
+    .contain .h2 {
+      font-size: 1.2em;
+    }
+    .contain .links .link {
+      font-size: 0.8em;
+    }
+  }

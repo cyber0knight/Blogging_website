@@ -1,0 +1,354 @@
+/* ============ fonts ======== */
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Estonia', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'My Soul', cursive;
+font-family: 'Noto Serif Makasar', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Yuji Hentaigana Akari', cursive; */
+
+* { 
+  padding: 0%;
+  margin: 0%;
+}
+.HomePage {
+  background: linear-gradient(
+    135deg,
+    #c7fd91 -20%,
+    #fff 20%,
+    rgb(119, 157, 231) 90%,
+    rgb(39, 102, 228) 100%
+  );
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ======================
+Navbar
+==================== */
+
+navbar {
+  font-family: "Libre Baskerville", serif;
+  background-color: rgb(99, 99, 239);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+}
+
+.logo { 
+  padding-top: 6px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #fff;
+  pointer-events: none;
+}
+
+.navigation {
+  margin-left: 25%;
+  display: flex;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/* ===========================
+    Pages
+  ================== */
+.home {
+  height: 100vh;
+  width: 100%;
+  
+  /* display: flex;
+    justify-content:center; */
+}
+
+/* ===========================
+    Page 1
+  ================== */
+
+.home1 .greeting{
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%,-95%);
+}
+.greeting h4{
+  font-size: 14px;
+}
+.home1 .cont {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  display: flex;
+  flex-direction: column;
+}
+.cont .box {
+  border: 1.4px solid #000;
+  color: rgb(27, 12, 89);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont .box1 {
+  font-size: 30px;
+  padding: 40px;
+  margin: 10px 100px 30px 0px;
+  border-radius: 40px;
+  text-align: center;
+}
+.cont .box2 {
+  font-size: 23px;
+  padding: 35px;
+  text-align: center;
+  margin: 25px 40% 30px 0px;
+  border-radius: 35px;
+}
+.cont .nav-link {
+  width: 150px;
+  height: 50px;
+  border: 1.3px solid #000;
+  font-size: 18px;
+  display: flex;
+  background-color: rgb(202, 202, 244);
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+.cont .nav-link:hover {
+  background-color: rgb(16, 16, 103);
+  color: #fff;
+}
+/* ===========================
+    Page 2
+  ================== */
+.cont2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  width: 78%;
+  height: 80%;
+}
+.cont2 img {
+  position: absolute;
+}
+.cont2 .img1 {
+  left: 100%;
+  top: 5%;
+  transform: translate(-100%, -5%);
+}
+.cont2 .img2 {
+  left: 80%;
+  top: 50%;
+  transform: translate(-80%, -50%);
+}
+.cont2 .img3 {
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -75%);
+}
+.cont2 .img4 {
+  left: 5%;
+  top: 95%;
+  transform: translate(-5%, -95%);
+}
+.cont2 .img5 {
+  left: 45%;
+  top: 30%;
+  transform: translate(-30%, -45%);
+  z-index: -1;
+}
+.cont2 .img6 {
+  left: 27%;
+  top: 40%;
+  transform: translate(-25%, -15%);
+  z-index: -2;
+}
+.cont2 img:hover {
+  z-index: 1;
+}
+
+/* =======================
+  responsive 
+ =================== */
+
+@media (min-width: 0px) and (max-width: 1200px) {
+  navbar {
+    display: block;
+    padding: 0px;
+  }
+  .logo {
+    position: absolute;
+    left: 4%;
+    top: 45%;
+    transform: translate(-3%, -45%);
+    width: 50%;
+    font-size: 1em;
+  }
+  .navigation {
+    position: relative;
+    display: flex;
+    justify-content: right;
+  }
+  nav .nav-link {
+    font-size: 0.9em;
+    padding: 10px 6px 10px 0px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .home1 .cont {
+    width: 80%;
+    height: 80%;
+  }
+
+  .cont .box1 {
+    font-size: 20px;
+    padding: 35px;
+  }
+  .cont .box2 {
+    font-size: 15px;
+    padding: 30px;
+  }
+  .cont .nav-link {
+    font-size: 15px;
+  }
+
+  .cont2{
+    width: 100%;
+    height: 80%;
+  }
+  .cont2 img{
+    width: 320px;
+    height: 200px;
+  }
+  .cont2 .img1 {
+    left: 82%;
+    top: 20%;
+    transform: translate(-82%, -20%);
+  }
+  .cont2 .img2 {
+    left: 65%;
+    top: 50%;
+    transform: translate(-65%, -50%);
+  }
+  .cont2 .img3 {
+    left: 45%;
+    top: 65%;
+    transform: translate(-45%, -60%);
+  }
+  .cont2 .img4 {
+    left: 22%;
+    top: 80%;
+    transform: translate(-25%, -80%);
+  }
+  .cont2 .img5 {
+    left: 55%;
+    top: 28%;
+    transform: translate(-55%, -28%);
+    z-index: -1;
+  }
+  .cont2 .img6 {
+    left: 30%;
+    top: 51%;
+    transform: translate(-25%, -51%);
+    z-index: -2;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  
+  .home1 .cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+  }
+  .cont .box1 {
+    font-size: 18px;
+    padding: 25px;
+    margin: 150px 10px 30px 5px;
+    
+  }
+  .cont .box2 {
+    font-size: 13px;
+    padding: 25px;
+    margin: 25px 40px 30px 5px;
+  }
+  .cont .nav-link {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .cont2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont2 img{
+    width: 300px;
+    height: 180px;
+  }
+  .cont2 .img1 {
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+  }
+  .cont2 .img2 {
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+  }
+  .cont2 .img3 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cont2 .img4 {
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+  }
+  .cont2 .img5 {
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+    z-index: 0;
+  }
+  .cont2 .img6 {
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -95%);
+    z-index: 0;
+  }
+}

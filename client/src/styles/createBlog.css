@@ -1,0 +1,10 @@
+.create-blog{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    top: 50px;
+}
+.create-blog h2{
+    text-align: center;
+}

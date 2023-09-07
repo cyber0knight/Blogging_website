@@ -1,0 +1,43 @@
+.rb-content{
+    /* background-color: rgb(243, 241, 237); */
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rb-img img{
+    padding: 10px;
+    border-radius: 20px;
+}
+.rb-text h1{
+    font-family: serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+p{
+    font-family: serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media (min-width:1150px){
+    .rb-img{
+        align-self: center;
+    }
+    .rb-img img{
+        
+        height: 600px;
+        /* width: 700px; */
+    }
+}
+@media (min-width:700px){
+    .rb-img img{
+        height: 600px;
+        width: 600px;
+    }
+}

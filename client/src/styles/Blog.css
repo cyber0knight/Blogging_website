@@ -1,0 +1,87 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Estonia', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'My Soul', cursive;
+font-family: 'Noto Serif Makasar', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Yuji Hentaigana Akari', cursive;
+font-family: 'Nanum Myeongjo', serif; */
+
+.posts-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.post-box {
+    margin-left:5.5%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 500px;
+}
+.card-title{
+    font-family: serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.small-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.card-text{
+    margin-top: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 24px;
+    font-size:15px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+@media (min-width: 1100px) and (max-width:1200px)
+{
+    .post-box{
+        margin-left:2%;
+        width: 280px;
+    }
+}
+
+@media (min-width: 0px) and (max-width:1099px)
+{
+    .posts-box{
+        justify-content: center;
+       
+    }
+   
+    .post-box{
+        margin-left: 0%;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* @media (min-width: 0px) and (max-width:750px){
+    
+    .post-box{
+        margin-left: 25%;
+    }
+} */
+
+@media (min-width: 0px) and (max-width:480px)
+{
+    .post-box{
+        width: 300px;
+    }
+    .card-text{
+        margin-top: 5px;
+        font-family: 'Nanum Myeongjo', serif;;
+        line-height: 18px;
+        font-weight: 300;
+    }
+    .post-btn{
+        font-size: 16px;
+    }
+}
