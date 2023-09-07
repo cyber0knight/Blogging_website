@@ -12,7 +12,7 @@ const SidePanel = () => {
       <div className="sp-user">
         {userPhoto ? (
           <img
-            src={`/api/v1/photo/getPhoto/${auth.user._id}`}
+            src={`https://blogging-website-server.onrender.com/api/v1/photo/getPhoto/${auth.user._id}`}
             alt="user"
           />
         ) : (
