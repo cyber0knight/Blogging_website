@@ -13,7 +13,7 @@ const ReadBlog = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get(`/api/v1/post/getPostById/${pid}`);
+        const response = await axios.get(`https://blogging-website-server.onrender.com/api/v1/post/getPostById/${pid}`);
         setPost(response.data.post);
         // console.log(response.data.post);
       } catch (error) {
