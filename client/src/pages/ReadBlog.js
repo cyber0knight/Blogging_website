@@ -41,7 +41,7 @@ const ReadBlog = () => {
           <div className="rb-img">
             {post._id ? ( // Add conditional check for post._id
               <img
-                src={`/api/v1/post/post-photo/${post._id}`}
+                src={`https://blogging-website-server.onrender.com/api/v1/post/post-photo/${post._id}`}
                 className="card-img-top"
                 alt="user"
               />
