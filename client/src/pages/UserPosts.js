@@ -10,7 +10,7 @@ const UserBlogs = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("/api/v1/post/userPosts");
+        const response = await axios.get("https://blogging-website-server.onrender.com/api/v1/post/userPosts");
         setPosts(response.data.posts);
         // console.log(response.data.posts)
       } catch (error) {
