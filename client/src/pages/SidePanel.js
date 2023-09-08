@@ -25,10 +25,10 @@ const SidePanel = () => {
         <h2>{auth.user.userName}</h2>
       </div>
       <div className="sp-btn">
-          <a href="/profile">Profile-page</a>
-          <a href="/createBlog">Blogging-page</a>
-          <a href="https://issacmukaraportfolio.netlify.app/">About-Me</a>
-          <a href="mailto:issacmukara@gmail.com">Contact Me</a>
+        <Link to="/profile">Profile-page</Link>
+        <Link to="/createBlog">Blogging-page</Link>
+        <a href="https://issacmukaraportfolio.netlify.app/">About-Me</a>
+        <a href="mailto:issacmukara@gmail.com">Contact Me</a>
       </div>
       <div className="sp-footer">
           <h5>Crafted By Issac Mukara</h5>
