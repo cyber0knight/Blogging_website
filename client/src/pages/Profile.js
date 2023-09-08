@@ -6,6 +6,7 @@ import UserBlogs from './UserPosts';
 import axios from 'axios';
 import "../styles/Profile.css";
 import { successNote, warningNote } from '../components/toast';
+import {Link} from "react-router-dom";
 
 
 
@@ -78,7 +79,7 @@ const Profile = () => {
           </label>
           <h1>{auth.user.userName}</h1>
           <div className='dash-box'>
-            <a href="/createBlog">Create a Blog</a>
+            <Link to="/createBlog">Create a Blog</Link>
           </div>
         </div>
         <div className='userPosts'>
