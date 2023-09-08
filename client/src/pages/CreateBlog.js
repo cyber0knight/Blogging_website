@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Layout from '../components/Layout';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { successNote, warningNote } from '../components/toast';
 import "../styles/createBlog.css";
