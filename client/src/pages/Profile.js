@@ -26,7 +26,7 @@ const Profile = () => {
         // Handle the success case here
         warningNote();
       }
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       // console.error(error);
       // Handle the error case here
