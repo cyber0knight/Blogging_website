@@ -29,7 +29,7 @@ const UserBlogs = () => {
 
     if (confirmDelete) {
       axios.delete(`https://blogging-website-server.onrender.com/api/v1/post/deletePost/${postId}`);
-      window.location.reload();
+      // window.location.reload();
       successNote("Deleted successfully");
     }
   };
