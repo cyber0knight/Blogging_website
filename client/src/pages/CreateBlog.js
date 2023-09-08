@@ -6,7 +6,7 @@ import { successNote, warningNote } from '../components/toast';
 import "../styles/createBlog.css";
 const CreateBlog = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
     const [category, setCategory] = useState("");
