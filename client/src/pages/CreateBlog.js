@@ -31,7 +31,7 @@ const CreateBlog = () => {
                 warningNote();
             }else{
                 successNote(data?.message);
-                navigate("/");
+                // navigate("/");
             }
         }catch(error){
             // console.log(error);
