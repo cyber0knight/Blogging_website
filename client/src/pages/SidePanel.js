@@ -3,6 +3,7 @@ import { useAuth } from "../context/auth";
 import { usePhoto } from "../context/photo";
 // import axios from "axios";
 import "../styles/SidePanel.css";
+import { Link } from "react-router-dom";
 
 const SidePanel = () => {
   const [auth] = useAuth();
